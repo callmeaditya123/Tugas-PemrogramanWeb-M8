@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Test</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        .container {
+            max-width: 500px;
+            overflow-x: hidden;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+    <button class="fadetoggle" style="background-color: #1cdae0;">Fade Toggle</button>
+    <img src="logoTi.jpeg" alt="logo Ti" width="500">
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+            $(".fadetoggle").click(function(){
+                $("img").fadeToggle();
+                $("img").css("background-color", "orange");
+            });
+        });
+    </script>
+</body>
+</html>
