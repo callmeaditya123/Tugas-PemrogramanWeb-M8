@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tambah Data Kamar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="form-container">
+    <h2>Form Tambah Data Kamar</h2>
+    <form class="form-room">
+        <div class="form-group">
+            <label for="id_kamar_1">Id Kamar:</label>
+            <input type="text" id="id_kamar" name="id_kamar" value="1">
+        </div>
+        <div class="form-group">
+            <label for="gambar_kamar">Gambar Ruangan:</label>
+            <img src="single.jpg" alt="Gambar Ruangan single">
+            <img src="double.jpg" alt="Gambar Ruangan double">
+            <img src="suite.jpg" alt="Gambar Ruangan suite">
+        </div>
+        <div class="form-group">
+            <label for="Jenis_Kamar">Jenis Kamar:</label>
+            <select id="Jenis_kamar" name="jenis_kamar" class="short">
+                <option value="-">--Pilih--</option>
+                <option value="standar">STANDARD</option>
+                <option value="deluxe">DELUXE</option>
+                <option value="family">FAMILY</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="harga_kamar">Harga:</label>
+            <input type="text" id="harga_kamar" name="harga_kamar" value="Rp 500.000">
+        </div>
+        <div class="form-group">
+            <label for="fasilitas">Fasilitas:</label>
+            <input type="checkbox" id="fasilitas" name="fasilitas" value="tv"> TV
+            <input type="checkbox" id="fasilitas" name="fasilitas" value="ac"> AC 
+            <input type="checkbox" id="fasilitas" name="fasilitas" value="gym"> Gym
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Simpan</button>
+            <button type="reset" class="btn btn-warning">Batal</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
